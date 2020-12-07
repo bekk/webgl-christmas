@@ -1,0 +1,34 @@
+{
+    "name": "javascript-christmas-webgl",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/part1/index.js",
+    "scripts": {
+        "start1": "webpack-dev-server --port=8080 --mode development --config webpack.config-part1.js",
+        "start2": "webpack-dev-server --port=8080 --mode development --config webpack.config-part2.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bekk"
+    },
+    "author": "Holger Ludvigsen",
+    "license": "",
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "copy-webpack-plugin": "^4.5.1",
+        "html-webpack-plugin": "^4.5.0",
+        "raw-loader": "^1.0.0",
+        "source-map-loader": "^0.2.4",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.1",
+        "webpack-glsl-loader": "1.0.1"
+    },
+    "dependencies": {
+        "three": "^0.108.0",
+        "three-orbit-controls": "^82.1.0",
+        "webpack-glsl-loader": "^1.0.1"
+    }
+}
