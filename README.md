@@ -1,4 +1,4 @@
-# javascript-christmas-webg
+# WebGL JavaScript Christmas
 
 ## Setup
 

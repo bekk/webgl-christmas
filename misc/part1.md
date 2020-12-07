@@ -2,7 +2,7 @@
 
 As a developer, you have surely wondered if the web can do full 3D beyond tweaking the `z-index` and fiddling with CSS 3D transforms. WebGL is the API for making such fully customizable visualizations in all dimensions. We can use this together with de facto standard framework `three.js` to unlock this mysterious domain.
 
-Let us make a red christmas cube that reacts to our interaction. All the actual running code can be found in our repository. But don't worry, I will show what it looks like here.
+Let us make a red christmas cube that reacts to our interaction. All the actual running code can be found in [our repository](https://github.com/bekk/webgl-christmas). But don't worry, I will show what it looks like here.
 
 <!-- TODO: Pynt kuben som en julegave! -->
 
@@ -89,7 +89,7 @@ scene.add(light);
 
 It is beautiful! Look at those tight corners:
 
-![screenshot-part1](screenshot-part1.gif)
+![screenshot-part1](screenshot-part1.png)
 
 ## Shake it baby
 
