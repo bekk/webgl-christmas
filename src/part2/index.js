@@ -66,6 +66,15 @@ function makeContents() {
 function animate() {
     requestAnimationFrame(animate);
 
+    updateTime();
+    
+    uniforms.time.value = time;
+    uniforms.animationTime.value = animationTime;
+
+    renderer.render(scene, camera);
+}
+
+function updateTime() {
     const newTime = (new Date().getTime() - timeStart) / 1000;
     timeDelta = newTime - time;
     time = newTime;
@@ -74,11 +83,6 @@ function animate() {
         const animationSpeed = 0.8;
         animationTime += timeDelta * animationSpeed;
     }
-    
-    uniforms.time.value = time;
-    uniforms.animationTime.value = animationTime;
-
-    renderer.render(scene, camera);
 }
 
 function addInputListeners() {
