@@ -1,5 +1,3 @@
-uniform float time;
-
 varying vec3 normalWorldSpace;
 
 void main() { 
