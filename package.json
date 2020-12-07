@@ -4,8 +4,10 @@
     "description": "",
     "main": "src/part1/index.js",
     "scripts": {
-        "start1": "webpack-dev-server --port=8080 --mode development --config webpack.config-part1.js",
-        "start2": "webpack-dev-server --port=8080 --mode development --config webpack.config-part2.js"
+        "start1": "webpack-dev-server --port=8080 --mode development --entry ./src/part1/index.js --output-path part1",
+        "start2": "webpack-dev-server --port=8080 --mode development --entry ./src/part2/index.js --output-path part2",
+        "build1": "webpack --entry ./src/part1/index.js --output-path dist/part1",
+        "build2": "webpack --entry ./src/part2/index.js --output-path dist/part2"
     },
     "repository": {
         "type": "git",
