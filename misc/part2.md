@@ -2,7 +2,7 @@
 
 It is time to unleash the christmas spirit hiding behind that noisy fan in your computer. In this article, we will use shaders in WebGL to make animations no one could imagine in JavaScript before.  
 
-All good developers will get presents from Santa. So I am absolutely sure that you have read the previous calendar entry (3D with WebGL and three.js)[https://javascript.christmas/2020/9]. Allthough, if you have dabbled in WebGL before, that is not strictly necessary.
+All good developers will get presents from Santa. So I am absolutely sure that you have read the previous calendar entry [https://javascript.christmas/2020/9](3D with WebGL and three.js). Although, if you have dabbled in WebGL before, that is not strictly necessary.
 
 ## A shady proposal
 
@@ -39,7 +39,7 @@ const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 ```
 
-Now it will be rendered to the screen, but it won't work of course, because we have to defined the uniforms and shader code!
+Now it will be rendered to the screen, but it won't work of course, because we have to define the uniforms and shader code!
 
 The uniforms are simply a JavaScript object with entries for each variable. I am going to use `time` to track the neverending passing of time (in seconds). And then I am going to have the clever little `animationTime` to control the wobble animation, where `0.0` is the start and `1.0` is the end:
 
